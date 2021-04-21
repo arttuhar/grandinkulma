@@ -20,7 +20,7 @@ Get upcoming departures of Grandinkulma stop (V6121) and show three of them on t
 
 ## Demo
 
-Project is hosted in Heroku and it is available [here]().
+Project is hosted in Heroku and it is available [here](https://grandinkulma.herokuapp.com).
 
 ## Setup
 
