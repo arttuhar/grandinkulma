@@ -16,7 +16,7 @@ class Timetable extends Component {
         return (
             <div>
                 {stopData.map(stop =>
-                    <div key={stop.gtfsId}>
+                    <div>
                         <h3>{stop.code} {stop.name}</h3>
                     <table>
                         <thead>
@@ -27,7 +27,7 @@ class Timetable extends Component {
                             </thead>
                         <tbody>
                             {(stop.stoptimesWithoutPatterns.map(stopTime =>
-                                <tr key={`${stopTime.trip.route.gtfsId}-${stopTime.realtimeArrival}`}>
+                                <tr>
                                     <td>{stopTime.trip.route.shortName} {stopTime.headsign}</td>
                                     <td className='realtimeCell'>{'~' + this.toHhMm(stopTime.realtimeArrival)}</td>
                                 </tr>
